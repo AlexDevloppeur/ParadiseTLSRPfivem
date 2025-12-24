@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paradise Club – Règlement & Boissons</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+body { margin:0; padding:0; font-family:'Poppins',sans-serif; background: radial-gradient(circle at top,#1b0033,#000); color:#fff; }
+header { text-align:center; padding:60px 20px 20px; }
+header h1 { font-family:'Pacifico',cursive; font-size:72px; background:linear-gradient(90deg,#ff4ecd,#00eaff); -webkit-background-clip:text; -webkit-text-fill-color:transparent; text-shadow:0 0 25px rgba(255,78,205,0.6); margin-bottom:10px; }
+header span { font-size:20px; color:#ffd86b; letter-spacing:4px; }
+.tab-menu { display:flex; justify-content:center; gap:20px; margin:20px 0; flex-wrap:wrap; }
+.tab-menu button { padding:10px 25px; border:none; border-radius:12px; cursor:pointer; background:rgba(255,255,255,0.1); color:#ffd86b; font-weight:600; transition:0.3s; }
+.tab-menu button.active, .tab-menu button:hover { background: linear-gradient(90deg,#ff4ecd,#00eaff); color:#000; }
+.container { max-width:1100px; margin:auto; padding:20px; }
+.tab-content { display:none; }
+.tab-content.active { display:block; }
+.section { background: rgba(255,255,255,0.05); border-radius: 20px; border:1px solid rgba(255,255,255,0.2); box-shadow:0 0 25px rgba(0,234,255,0.1); padding:25px; margin-bottom:40px; }
+.section h2 { color:#ffd86b; text-align:center; margin-bottom:20px; text-shadow:0 0 10px rgba(255,216,107,0.7); }
+.section h3 { color:#00eaff; margin-bottom:10px; font-size:18px; text-shadow:0 0 6px rgba(0,234,255,0.8); }
+ul { margin-left:20px; list-style:none; }
+ul li::before { content:"🔹"; margin-right:8px; color:#ffd86b; }
+ul li { margin-bottom:8px; }
+.item { display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px dashed rgba(255,255,255,0.15); font-size:15px; }
+.item:last-child { border-bottom:none; }
+.price { color:#00eaff; font-weight:600; text-shadow:0 0 6px rgba(0,234,255,0.8); }
+.box { background: rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.15); border-radius:18px; padding:25px; box-shadow:0 0 25px rgba(0,234,255,0.1); margin-bottom:20px; }
+.vip { background: linear-gradient(135deg, rgba(255,78,205,0.2), rgba(0,234,255,0.15)); border:1px solid rgba(255,78,205,0.5); }
+.menu { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+.discord { display:block; width:max-content; margin:20px auto 0; padding:15px 30px; background:linear-gradient(90deg,#ff4ecd,#00eaff); color:#000; font-weight:600; font-size:18px; border-radius:50px; text-decoration:none; text-align:center; transition:0.3s; }
+.discord:hover { transform: scale(1.05); box-shadow:0 0 20px rgba(255,78,205,0.7),0 0 20px rgba(0,234,255,0.7); }
+footer { text-align:center; margin-top:40px; font-size:13px; color:rgba(255,255,255,0.6); }
+@media(max-width:900px){ .menu { grid-template-columns:1fr; } header h1 { font-size:56px; } }
+@media(max-width:600px){ header h1 { font-size:48px; } header span { font-size:16px; } .discord { font-size:16px; padding:12px 25px; } }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Paradise Club</h1>
+<span>TLS RP</span>
+</header>
+
+<div class="tab-menu">
+<button class="active" onclick="showTab('reglement')">Règlement</button>
+<button onclick="showTab('boissons')">Boissons</button>
+</div>
+
+<div class="container">
+
+<!-- Onglet Règlement -->
+<div class="tab-content active" id="reglement">
+<div class="section">
+<h2>📜 RÈGLEMENT DE LA BOÎTE DE NUIT</h2>
+<h3>🎭 Règles RP</h3>
+<ul>
+<li>Le RP est obligatoire dès l’entrée dans la boîte.</li>
+<li>Respecte le rôle de chacun (vigiles, clients VIP...)</li>
+<li>Les scènes de bagarre, vol ou autres illégalités sont interdites sauf événement prévu.</li>
+</ul>
+<h3>🗣 Comportement</h3>
+<ul>
+<li>Le respect est obligatoire entre tous les membres (HRP et RP).</li>
+<li>Pas d’insultes, menaces ou harcèlement – tolérance zéro.</li>
+<li>Aucune discrimination ne sera tolérée.</li>
+</ul>
+<h3>🎧 Utilisation du Discord</h3>
+<ul>
+<li>Le spam vocal ou écrit est interdit.</li>
+<li>Respecte les salons (pas d’insulte dans les annonces ou salons privés).</li>
+<li>Les pseudos, photos de profil et statuts doivent rester corrects.</li>
+</ul>
+<h3>⚠️ Sanctions</h3>
+<p>En cas de non-respect des règles, des avertissements, kicks ou bans peuvent être appliqués par les gérants du night club. Ils réagiront très vite.</p>
+<a class="discord" href="https://discord.gg/mxZ7WSWvYu" target="_blank">Rejoins-nous sur Discord</a>
+</div>
+</div>
+
+<!-- Onglet Boissons -->
+<div class="tab-content" id="boissons">
+<div class="section">
+<h2>🍹 CARTE DES BOISSONS</h2>
+<div class="menu">
+<div class="box">
+<h3>ALCOOLS (4 cl)</h3>
+<div class="item"><span>Vodka / Gin / Rhum / Whisky / Tequila</span><span class="price">15€</span></div>
+<div class="item"><span>Whisky Coca</span><span class="price">17€</span></div>
+</div>
+<div class="box">
+<h3>BIÈRES</h3>
+<div class="item"><span>Bière pression</span><span class="price">10€</span></div>
+<div class="item"><span>Bière bouteille</span><span class="price">11€</span></div>
+<div class="item"><span>Bière premium / import</span><span class="price">14€</span></div>
+</div>
+<div class="box">
+<h3>COCKTAILS</h3>
+<div class="item"><span>Mojito / Sex on the Beach</span><span class="price">16€</span></div>
+<div class="item"><span>Piña Colada</span><span class="price">22€</span></div>
+<div class="item"><span>Cocktail premium</span><span class="price">22€</span></div>
+</div>
+<div class="box">
+<h3>VINS</h3>
+<div class="item"><span>Verre de vin</span><span class="price">10€</span></div>
+<div class="item"><span>Bouteille vin classique</span><span class="price">45€</span></div>
+<div class="item"><span>Bouteille vin premium</span><span class="price">85€</span></div>
+</div>
+<div class="box">
+<h3>BOUTEILLES (VIP / TABLE)</h3>
+<div class="item"><span>Vodka / Gin / Rhum</span><span class="price">145€</span></div>
+<div class="item"><span>Whisky standard</span><span class="price">195€</span></div>
+</div>
+<div class="box">
+<h3>CHAMPAGNES</h3>
+<div class="item"><span>Moët & Chandon</span><span class="price">220€</span></div>
+<div class="item"><span>Veuve Clicquot</span><span class="price">265€</span></div>
+<div class="item"><span>Dom Pérignon</span><span class="price">550€</span></div>
+</div>
+<div class="box">
+<h3>BOUTEILLES CLASSIQUES</h3>
+<div class="item"><span>Vodka / Gin / Rhum</span><span class="price">180€</span></div>
+<div class="item"><span>Whisky standard</span><span class="price">220€</span></div>
+</div>
+<div class="box vip">
+<h3>ULTRA VIP</h3>
+<div class="item"><span>Bouteille prestige (édition limitée)</span><span class="price">1 200€</span></div>
+<div class="item"><span>Pack VIP (2–3 bouteilles + softs)</span><span class="price">11 200€</span></div>
+</div>
+<div class="box">
+<h3>SOFTS</h3>
+<div class="item"><span>Soda / Jus</span><span class="price">10€</span></div>
+<div class="item"><span>Eau bouteille</span><span class="price">5€</span></div>
+<div class="item"><span>Ragnarök</span><span class="price">20€</span></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer>Paradise Club © TLS RP</footer>
+
+<script>
+function showTab(tabId){
+    const tabs = document.querySelectorAll('.tab-content');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+
+    const buttons = document.querySelectorAll('.tab-menu button');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.tab-menu button[onclick="showTab('${tabId}')"]`).classList.add('active');
+}
+</script>
+
+</body>
+</html>
